@@ -19,10 +19,11 @@
     ></script>
   </head>
   <body>
+    <div class="container" id="cv-form" >
+
+    
     <h1 class="text-center">Resume Maker</h1>
-    <div class="text-center">
-      <span class="bg-primary p-2"> A Most Visitable Site</span>
-    </div>
+    <p class="text-center">A Most Visitable Site</p>
     <div class="row">
       <div class="col-md-6 p-5">
         <!-- first col -->
@@ -98,18 +99,48 @@
       </div>
       <div class="col-md-6 p-5">
         <!-- second col -->
-        <h1 class="text-center">Personal Information</h1>
-        <div class="form-group">
+        <h1 class="text-center">Professional Information</h1>
+        <div class="form-group" >
           <label for="objective">Objective</label>
           <textarea
             type="text"
-            class="form-control weField "
-            id="objective"
+            class="form-control"
+            
             placeholder="Enter here "
           ></textarea>
+        
+        </div>
+        <div class="form-group" id="we">
+          <label for="objective">Work Experience</label>
+          <textarea
+            type="text"
+            class="form-control weField "
+            rows="3"
+            placeholder="Enter here "
+          ></textarea>
+          <!-- new text Area -->
+
+          <div class="container text-center m-3 p-2 " id="weAddButton" >
+            <button onclick="addNewWEField()" class="btn btn-light btn-sm" >Add More</button>
+          </div>
+        </div>
+        <div class="form-group" id="aq">
+          <label for="objective">Academic Qualification</label>
+          <textarea
+            type="text"
+            class="form-control eqField "
+            rows="3"
+            placeholder="Enter here "
+          ></textarea>
+          <div class="container text-center m-3 p-2 " id="aqAddButton" >
+            <button onclick="addNewAQField()" class="btn btn-light btn-sm" >Add More</button>
+          </div>
         </div>
       </div>
+      <!-- print CV -->
+      <button   class="btn btn-light btn-lg" > Generate CV </button>
     </div>
+  </div>
 
     <!-- adding js file -->
 
