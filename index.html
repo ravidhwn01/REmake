@@ -101,6 +101,7 @@
           <div class="form-group">
             <label for="objective">Objective</label>
             <textarea
+            id="objective"
               type="text"
               class="form-control"
               placeholder="Enter here "
@@ -109,6 +110,7 @@
           <div class="form-group" id="we">
             <label for="objective">Work Experience</label>
             <textarea
+           
               type="text"
               class="form-control weField"
               rows="3"
@@ -138,9 +140,10 @@
           </div>
         </div>
         <!-- print CV -->
-        <button class="btn btn-light btn-lg">Generate CV</button>
-      </div>
-    </div>
+        <div class="container mt-3 mb-3 text-center">
+          <button onclick="generateCV()" class="btn btn-light">
+            Generate CV
+       </div>
 
     <!-- cv template -->
     <div class="container" id="cv-template">
@@ -149,41 +152,24 @@
           <!-- left side -->
          <img src="/images/signn22.jpg" class="img-fluid" alt="loading...">
         
-        <p>ravi kumar dhawan</p>
-        <p>+91-12423423523,+91-3464356436</p>
-        <p>23-c sector delhi</p>
+        <p id="nameT1" >ravi kumar dhawan</p>
+        <p id="contactT" >+91-12423423523,+91-3464356436</p>
+        <p id="addressT" >23-c sector delhi</p>
         <hr>
-        <p> <a href="https://www.facebook.com"> facebook</a></p>
-        <p> <a href="https://www.google.com"> google</a></p>
-        <p> <a href="https://www.github.com"> github</a></p>
+        <p id="facebookT" > <a href="https://www.facebook.com"> facebook</a></p>
+        <p id="instaT" > <a href="https://www.instagram.com"> instagram</a></p>
+        <p id="githubT" > <a href="https://www.github.com"> github</a></p>
+        <p id="inkedT" > <a href="https://www.linkedin.com"> linkedIn</a></p>
         </div>
         <div class="col-md-8 ">
           <!-- right side -->
-          <h1>ravi kumar dhawan</h1>
+          <h1 id="nameT2" >ravi kumar dhawan</h1>
         <!-- objective card -->
         <div class="card">
           <div class="card-header">
             <div class="card-body">
               <h3>Objective</h3>
-              <p>to become a web developer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quo nemo maiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, doloremque asperiores. Sint to become a web developer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quo nemo maiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, doloremque asperiores. Sint. </p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <div class="card-body">
-              <h3>Academic Qualification</h3>
-              <ul>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed.
-                </li>
-              </ul>
+              <p id="objectiveT" >to become a web developer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quo nemo maiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, doloremque asperiores. Sint to become a web developer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quo nemo maiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, doloremque asperiores. Sint. </p>
             </div>
           </div>
         </div>
@@ -191,7 +177,7 @@
           <div class="card-header">
             <div class="card-body">
               <h3>Work Experience</h3>
-              <ul>
+              <ul id="weT" >
                 <li>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed.
                 </li>
@@ -205,12 +191,31 @@
             </div>
           </div>
         </div>
-<div class="container mt-3 text-center">
-  <button class="btn btn-light">
-    print CV
-  </button>
-</div>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-body">
+              <h3>Academic Qualification</h3>
+              <ul id="aqT" >
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      
+      </div>
+      <div class="container mt-3 text-center">
+        <button onclick="printCV()" class="btn btn-light">
+          print CV
+        </button>
+      </div>
       </div>
     </div>
 

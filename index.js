@@ -22,3 +22,12 @@ function addNewAQField() {
   let aqAddButton = document.getElementById("aqAddButton");
   aqOb.insertBefore(newNode, aqAddButton);
 }
+
+
+function generateCV(){
+  console.log(`generate cv`);
+}
+
+function printCV(){
+  console.log(`print cv`);
+}
