@@ -95,6 +95,8 @@
             </div>
           </div>
         </div>
+        
+
         <div class="col-md-6 p-5">
           <!-- second col -->
           <h1 class="text-center">Professional Information</h1>
@@ -144,10 +146,12 @@
           <button onclick="generateCV()" class="btn btn-light">
             Generate CV
        </div>
+        </div>
+        </div>
 
     <!-- cv template -->
     <div class="container" id="cv-template">
-      <div class="row">
+      <div class="row " id="cvtemplt">
         <div class="col-md-4 ">
           <!-- left side -->
          <img src="/images/signn22.jpg" class="img-fluid" alt="loading...">
@@ -156,10 +160,10 @@
         <p id="contactT" >+91-12423423523,+91-3464356436</p>
         <p id="addressT" >23-c sector delhi</p>
         <hr>
-        <p id="facebookT" > <a href="https://www.facebook.com"> facebook</a></p>
-        <p id="instaT" > <a href="https://www.instagram.com"> instagram</a></p>
-        <p id="githubT" > <a href="https://www.github.com"> github</a></p>
-        <p id="inkedT" > <a href="https://www.linkedin.com"> linkedIn</a></p>
+        <p > <a  id="fbT" href="#1"> </a></p>
+        <p  > <a  id="instaT" href="#1"> </a></p>
+        <p  > <a id="githubT" href="#1"> </a></p>
+        <p  > <a id="inkedT" href="#1"> </a></p>
         </div>
         <div class="col-md-8 ">
           <!-- right side -->
@@ -211,12 +215,12 @@
         </div>
       
       </div>
-      <div class="container mt-3 text-center">
-        <button onclick="printCV()" class="btn btn-light">
-          print CV
-        </button>
-      </div>
-      </div>
+    </div>
+    <div class="container mt-3 text-center">
+      <button onclick="printCV()" class="btn btn-light">
+        print CV
+      </button>
+    </div>
     </div>
 
     <!-- adding js file -->
